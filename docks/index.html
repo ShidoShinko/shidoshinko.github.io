@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/pink.svg" width="72" height="23" alt="Пинк" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper"></div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фотография</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-header">
+        <h2 class="visualy-hidden">Pink</h2>
+        <div class="main-header__wrapper">
+          <p class="main__title">Взгляни на жизнь иначе</p>
+          <img src="" alt="" />
+          <a href="#" class="main-button">Скачать приложение</a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <p>
+            Доступно для iPhone, iPad, Andorid <br />
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <div class="advantages-header">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить</p>
+        </div>
+        <div class="advantages__wrapper">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">
+            Приложение позволит вам победить осеннюю хандру и депрессию
+            буквально в несколько кликов!
+          </p>
+          <img src="" alt="" />
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью,
+            чтобы усилить эффект
+          </p>
+          <img src="" alt="" />
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+            заводите новых
+          </p>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper">
+          <div class="reviews__slider">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__description">
+              "Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей
+              будущей женой в комментария к выложенной фотографии!"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <h2 class="visually-hidden">Цены</h2>
+        <div class="price__wrapper">
+          <table>
+            <tr class="">
+              <td class="visually-hidden">0</td>
+              <td>
+                <p>База</p>
+                <p>1,99 usd</p>
+              </td>
+              <td>
+                <p>Стандарт</p>
+                <p>3,99 usd</p>
+              </td>
+              <td>
+                <p>Анлим</p>
+                <p>9,99 usd</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="" />
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="" />
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td>
+                <img src="img/no.png" width="27" height="27" alt="" />
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="" />
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Комментарии</td>
+              <td>
+                <img src="img/no.png" width="27" height="27" alt="" />
+              </td>
+              <td>
+                <img src="img/no.png" width="27" height="27" alt="" />
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="" />
+              </td>
+            </tr>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">
+              1
+            </button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+          <!--
+             !! Таблица сделана, обернуть ее в слайдер, повешать ховером
+             !! ленту на выделенный пункт
+          -->
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__header">
+            Остались вопросы?<br />
+            Свяжитесь с нами!
+          </h2>
+          <h3 class="feedback__title">Звоните:</h3>
+          <p class="feedback__description">+7(812)555-66-66</p>
+
+          <h3 class="feedback__title">Пишите:</h3>
+          <p class="feedback__description">mail@htmlacademy.ru</p>
+
+          <h3 class="feedback__title">Приезжайте в гости:</h3>
+          <p class="feedback__description">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__wrapper">
+        <a href="#" class="page-footer__logo">
+          <img
+            src="img/logotype-blue-tablet.svg"
+            width="145"
+            height="40"
+            alt="Логотип"
+          />
+        </a>
+        <div class="footer__social">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="img/twitter.svg"
+                  width="18"
+                  height="14"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/facebook.svg"
+                  width="9"
+                  height="18"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/youtube.svg"
+                  width="15"
+                  height="13"
+                  alt="Youtube"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="main-footer__title">Разработано</p>
+          <img src="img/html academy.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!--
+     !! ВСЕ ИЗОБРАЖЕНИЯ/ИКОНКИ/КАРТИНКИ, КОТОРЫЕ ЯВЛЯЮТСЯ ДЕКОРАТИВНЫМИ,
+     !! А НЕ КОНТЕНТНЫМИ НУЖНО ДОБАВИТЬ КЛАССОМ
+    -->

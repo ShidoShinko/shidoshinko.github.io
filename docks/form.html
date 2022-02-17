@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pink Form</title>
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <header class="page-form-header">
+      <a class="page-header__logo">
+        <img src="img/pink.svg" width="72" height="23" alt="Пинк" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper"></div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фотография</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contest">
+        <h2 class="visually-hidden">Конкурс</h2>
+        <div class="contest__wrapper">
+          <p class="contest__title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </p>
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">Условия конкурса:</h2>
+        <!--
+          !! все классы инпутов отредактировать потом
+         -->
+        <div class="data__wrapper">
+          <p class="data__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз -
+            1000 миль на вашу бонусную карту!
+          </p>
+        </div>
+        <form
+          class="form-contest"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <fieldset class="data">
+            <legend class="visually-hidden">ФИО</legend>
+            <div class="form__row">
+              <div class="form__wrapper">
+                <label for="second-name">Фамилия:</label>
+                <input
+                  class="data__input data__second-name"
+                  type="text"
+                  name="second-name"
+                  id="second-name"
+                  placeholder="Укажите фамилию *"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__wrapper">
+                <label for="name">Имя:</label>
+                <input
+                  class="data__input data__name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Введите ваше имя *"
+                />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__wrapper">
+                <label for="patronymic">Отчество:</label>
+                <input
+                  class="data__input data__patronymic"
+                  type="text"
+                  name="patronymic"
+                  id="patronymic"
+                  placeholder="Ну и отчество тоже"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="achievements">
+            <div class="achievements__wrapper">
+              <p class="achievements__title">
+                Ваши безбашенные достижения в путешествии
+              </p>
+              <fieldset>
+                <legend class="achievements__filter-legend visually-hidden">
+                  Достижения:
+                </legend>
+                <ul class="">
+                  <li class="">
+                    <input
+                      class="visually-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="selfie"
+                      id="filter-first"
+                      checked
+                    />
+                    <label
+                      class="filter__achievements filter__achievements--checkbox"
+                      for="filter-first"
+                    >
+                      Сделал селфи с акулой
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="selfie"
+                      id="filter-second"
+                      checked
+                    />
+                    <label
+                      class="filter__achievements filter__achievements--checkbox"
+                      for="filter-second"
+                    >
+                      Обгорел на пляже
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="selfie"
+                      id="filter-third"
+                      checked
+                    />
+                    <label
+                      class="filter__achievements filter__achievements--checkbox"
+                      for="filter-third"
+                    >
+                      Видел Чака Норриса
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="selfie"
+                      id="filter-fourth"
+                      checked
+                    />
+                    <label
+                      class="filter__achievements filter__achievements--checkbox"
+                      for="filter-fourth"
+                    >
+                      Накупил сувениров
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="selfie"
+                      id="filter-fifth"
+                      checked
+                    />
+                    <label
+                      class="filter__achievements filter__achievements--checkbox"
+                      for="filter-fifth"
+                    >
+                      Удержал башню
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="selfie"
+                      id="filter-sixth"
+                      checked
+                    />
+                    <label
+                      class="filter__achievements filter__achievements--checkbox"
+                      for="filter-sixth"
+                    >
+                      Разгромил отель
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </fieldset>
+          <fieldset class="contacts">
+            <div class="contacts__wrapper">
+              <div class="form__row">
+                <div class="form__wrapper">
+                  <label for="tel">Номер телефона</label>
+                  <input
+                    class="contacts__input contacts__number"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="Номер, пожалуйста"
+                  />
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__wrapper">
+                  <label for="email">Адрес почты</label>
+                  <input
+                    class="contacts__input contacts__email"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Введите почту *"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="application">
+            <div class="application__wrapper">
+              <p class="application__title">
+                С каким приложением путешествовали?
+              </p>
+              <fieldset>
+                <legend class="application__filter-legend visualy-hidden">
+                  Приложения:
+                </legend>
+                <ul class="">
+                  <li class="">
+                    <input
+                      class="visually-hidden application__filter-input-radio"
+                      type="radio"
+                      name="application"
+                      value="application__ios"
+                      id="filter-ios"
+                    />
+                    <label
+                      class="filter__application filter__application--radio"
+                      for="filter-ios"
+                    >
+                      Pink для iOS
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden application__filter-input-radio"
+                      type="radio"
+                      name="application"
+                      value="application__android"
+                      id="filter-android"
+                    />
+                    <label
+                      class="filter__application filter__application--radio"
+                      for="filter-android"
+                    >
+                      Pink для Android
+                    </label>
+                  </li>
+                  <li>
+                    <input
+                      class="visually-hidden application__filter-input-radio"
+                      type="radio"
+                      name="application"
+                      value="application__windows"
+                      id="filter-windows"
+                    />
+                    <label
+                      class="filter__application filter__application--radio"
+                      for="filter-windows"
+                    >
+                      Windows Phone
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </fieldset>
+          <fieldset class="feedback">
+            <div class="feedback__wrapper">
+              <div class="form__row">
+                <div class="form__wrapper">
+                  <label for="impression">Опишите свои эмоции</label>
+                  <input
+                    class="feedback__input feedback__impression"
+                    type="text"
+                    name="impression"
+                    id="impression"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="form-cntest__send" type="submit">
+            Отправить форму
+          </button>
+          <p class="main-footer__legend main-footer__legend--center">
+            <small> * - обязательные поля </small>
+          </p>
+          <small class="main-footer__legend main-footer__legend--right">
+            * - обязательные поля
+          </small>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__wrapper">
+        <a href="#" class="page-footer__logo">
+          <img
+            src="img/logotype-blue-tablet.svg"
+            width="145"
+            height="40"
+            alt="Логотип"
+          />
+        </a>
+        <div class="footer__social">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="img/twitter.svg"
+                  width="18"
+                  height="14"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/facebook.svg"
+                  width="9"
+                  height="18"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/youtube.svg"
+                  width="15"
+                  height="13"
+                  alt="Youtube"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="main-footer__title">Разработано</p>
+          <img src="img/html academy.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pink Photography</title>
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="page-header__logo">
+        <img src="img/pink.svg" width="72" height="23" alt="Пинк" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper"></div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фотография</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-photo">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <div class="main-photo__wrapper">
+          <p class="main-photo__title">Фотографии пользователей</p>
+        </div>
+      </section>
+      <section class="galery">
+        <div class="galery__wrapper">
+          <p class="galery__discription">
+            Взгляните на фотографии, которые выкладывают подьзователи! Видите,
+            как не хватает ваших?
+          </p>
+        </div>
+        <div class="galery-photo__wrapper">
+          <img src="img/panorama-tablet.jpg" width="320" height="137" alt="" />
+          <!-- !! Время в скобках, возможно, указывается через JS,
+                 !! Так же как и значение количества лайков -->
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Анна</b>(5 минут назад)</p>
+            <p class="galery-comment__discription">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 215
+            </p>
+          </div>
+        </div>
+
+        <div class="galery-photo__wrapper">
+          <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="" />
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Левон</b>(5 часов назад)</p>
+            <p class="galery-comment__discription">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 356
+            </p>
+          </div>
+        </div>
+
+        <div class="galery-photo__wrapper">
+          <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="" />
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Антон</b>(12 часов назад)</p>
+            <p class="galery-comment__discription">Соседи будут рады!</p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 666
+            </p>
+          </div>
+        </div>
+
+        <div class="galery-photo__wrapper">
+          <img src="img/photo-3-tablet.jpg" width="280" height="180" alt="" />
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Борис</b>>(20 часов назад)</p>
+            <p class="galery-comment__discription">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 215
+            </p>
+          </div>
+        </div>
+
+        <div class="galery-photo__wrapper">
+          <img src="img/photo-4-tablet.jpg" width="280" height="180" alt="" />
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Сергей</b>(25 часов назад)</p>
+            <p class="galery-comment__discription">Самая кубанская в мире!</p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 4
+            </p>
+          </div>
+        </div>
+
+        <div class="galery-photo__wrapper">
+          <img src="img/photo-5-tablet.jpg" width="280" height="180" alt="" />
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Максим</b>(40 часов назад)</p>
+            <p class="galery-comment__discription">Где снег-то?</p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 150
+            </p>
+          </div>
+        </div>
+
+        <div class="galery-photo__wrapper">
+          <img src="img/photo-6-tablet.jpg" width="280" height="180" alt="" />
+          <div class="galery-comment__wrapper">
+            <p class="galery-comment__title"><b>Надежда</b>(45 часов назад)</p>
+            <p class="galery-comment__discription">Всем GM и взаимные лайки!</p>
+            <p class="galery-comment__social">
+              <img src="img/heart.svg" width="13" height="12" alt="" />
+              Нравится: 2560
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-editor">
+        <h2 class="visually-hidden">Фотофильтр</h2>
+        <div class="photo-filter__wrapper">
+          <p class="photo-filter__title">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <div class="photo-filter__wrapper">
+            <img src="img/photo-7-tablet.jpg" width="280" height="374" alt="" />
+            <img src="" alt="" />11111111111111111111
+            <img src="" alt="" />2222222222222222222
+            <img src="" alt="" />3333333
+            <!-- !! Тут идет скролл для фильтра -->
+          </div>
+          <div class="photo-editor__button">
+            <button type="button">1</button>
+            <button type="button">2</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__wrapper">
+        <a href="#" class="page-footer__logo">
+          <img
+            src="img/logotype-blue-tablet.svg"
+            width="145"
+            height="40"
+            alt="Логотип"
+          />
+        </a>
+        <div class="footer__social">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="img/twitter.svg"
+                  width="18"
+                  height="14"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/facebook.svg"
+                  width="9"
+                  height="18"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="img/youtube.svg"
+                  width="15"
+                  height="13"
+                  alt="Youtube"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="main-footer__title">Разработано</p>
+          <img src="img/html academy.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
